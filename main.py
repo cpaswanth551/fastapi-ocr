@@ -5,7 +5,7 @@ import pytesseract
 
 app = FastAPI()
 
-
+ # basic third party application for ocr 
 @app.post("/ocr")
 def ocr(image: UploadFile = File(...)):
     filepath = "txtFile"
